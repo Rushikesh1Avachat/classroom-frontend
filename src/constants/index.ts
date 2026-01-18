@@ -19,28 +19,15 @@ export const ROLE_OPTIONS = [
     },
 ];
 
-export const DEPARTMENTS = [
+// src/constants/index.ts
+export const DEPARTMENTS: string[] = [
     "Computer Science",
+    "Engineering",
+    "Mechanical Engineering",
+    "Electrical Engineering",
     "Mathematics",
     "Physics",
-    "Chemistry",
-    "Biology",
-    "English",
-    "History",
-    "Geography",
-    "Economics",
-    "Business Administration",
-    "Engineering",
-    "Psychology",
-    "Sociology",
-    "Political Science",
-    "Philosophy",
-    "Education",
-    "Fine Arts",
-    "Music",
-    "Physical Education",
-    "Law",
-] as const;
+];
 
 export const DEPARTMENT_OPTIONS = DEPARTMENTS.map((dept) => ({
     value: dept,

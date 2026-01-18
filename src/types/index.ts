@@ -7,6 +7,15 @@ export type Subject = {
     createdAt?: string;
     course:string
 };
+// src/constants/index.ts
+export const DEPARTMENTS: string[] = [
+    "Computer Science",
+    "Engineering",
+    "Mechanical Engineering",
+    "Electrical Engineering",
+    "Mathematics",
+    "Physics",
+];
 
 export type ListResponse<T = unknown> = {
     data?: T[];
