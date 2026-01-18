@@ -1,10 +1,13 @@
 
 
+
 const SubjectsCreate = () => {
 
 
     return (
-        <div>Subjects Create</div>
+        <div>
+        Create page
+        </div>
     )
 }
 export default SubjectsCreate
