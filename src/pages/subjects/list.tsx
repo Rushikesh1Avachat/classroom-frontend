@@ -46,14 +46,13 @@ const SubjectListPage = () => {
             },
             {
                 id: "department",
-                accessorKey: "department",
+                accessorKey: "department.name",
                 size: 150,
                 header: () => <p className="column-title">Department</p>,
                 cell: ({ getValue }) => (
                     <Badge variant="secondary">{getValue<string>()}</Badge>
                 ),
             },
-
             {
                 id: "description",
                 accessorKey: "description",
@@ -175,4 +174,4 @@ const SubjectListPage = () => {
     );
 };
 
-export default SubjectListPage;
+export default SubjectListPage;;
