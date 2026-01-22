@@ -1,4 +1,3 @@
-
 import { useLink, useShow } from "@refinedev/core";
 import { useTable } from "@refinedev/react-table";
 import { ColumnDef } from "@tanstack/react-table";
@@ -181,7 +180,6 @@ const SubjectsShow = () => {
         ],
         []
     );
-
     const classesTable = useTable<SubjectClass>({
         columns: classColumns,
         refineCoreProps: {
@@ -192,6 +190,7 @@ const SubjectsShow = () => {
             },
         },
     });
+
 
     const teachersTable = useTable<SubjectUser>({
         columns: userColumns,
@@ -248,7 +247,7 @@ const SubjectsShow = () => {
         );
     }
 
-   
+
     return (
         <ShowView className="class-view space-y-6">
             <ShowViewHeader resource="subjects" title={details.subject.name} />
@@ -297,8 +296,7 @@ const SubjectsShow = () => {
                     <CardTitle>Classes</CardTitle>
                     <Badge variant="secondary">{details.totals.classes}</Badge>
                 </CardHeader>
-                <CardContent> 
-                    {/*//@ts-ignore*/}
+                <CardContent>
                     <DataTable table={classesTable} paginationVariant="simple" />
                 </CardContent>
             </Card>
@@ -309,8 +307,6 @@ const SubjectsShow = () => {
                         <CardTitle>Teachers</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        {/*//@ts-ignore*/}
-
                         <DataTable table={teachersTable} paginationVariant="simple" />
                     </CardContent>
                 </Card>
@@ -320,8 +316,6 @@ const SubjectsShow = () => {
                         <CardTitle>Students</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        {/*//@ts-ignore*/}
-
                         <DataTable table={studentsTable} paginationVariant="simple" />
                     </CardContent>
                 </Card>
@@ -340,3 +334,5 @@ const getInitials = (name = "") => {
 };
 
 export default SubjectsShow;
+
+

@@ -174,4 +174,4 @@ const SubjectListPage = () => {
     );
 };
 
-export default SubjectListPage;;
+export default SubjectListPage;
