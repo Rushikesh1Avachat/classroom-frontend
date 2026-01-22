@@ -180,6 +180,7 @@ const SubjectsShow = () => {
         ],
         []
     );
+
     const classesTable = useTable<SubjectClass>({
         columns: classColumns,
         refineCoreProps: {
@@ -190,7 +191,6 @@ const SubjectsShow = () => {
             },
         },
     });
-
 
     const teachersTable = useTable<SubjectUser>({
         columns: userColumns,
@@ -246,7 +246,6 @@ const SubjectsShow = () => {
             </ShowView>
         );
     }
-
 
     return (
         <ShowView className="class-view space-y-6">
