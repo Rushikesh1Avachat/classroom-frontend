@@ -20,6 +20,7 @@ import SubjectsCreate from "@/pages/subjects/create.tsx";
 import SubjectsShow from "@/pages/subjects/show.tsx";
 import ClassesList from "@/pages/classes/list.tsx";
 import ClassesCreate from "@/pages/classes/create.tsx";
+import ClassesShow from "@/pages/classes/show.tsx";
 
 function App() {
     return (
@@ -81,7 +82,7 @@ function App() {
                                     <Route path="classes">
                                         <Route index element={<ClassesList />} />
                                         <Route path="create" element={<ClassesCreate />} />
-                                        {/*<Route path="show/:id" element={<ClassesShow />} />*/}
+                                        <Route path="show/:id" element={<ClassesShow />} />
 
                                     </Route>
 
